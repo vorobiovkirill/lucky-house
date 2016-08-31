@@ -1,0 +1,58 @@
+@import "bourbon"
+@import "vars"
+
+html
+	font-size: 16px
+
+body
+	color: #3a3a3a
+	background-color: #d1d1d1
+	font-size: 16px
+	line-height: 1.5
+	padding: 0
+	margin: 0
+	font:
+		family: 'RobotoRegular', sans-serif
+		style: normal
+		weight: normal
+	min-width: 320px
+	overflow: hidden
+
+a
+	color: red
+	background-color: transparent;
+	text-decoration: none
+	line-height: inherit
+	cursor: pointer
+	&:hover
+		text-decoration: none
+
+
+.list-inline
+	> li
+		display: inline-block
+
+.menu
+	display: block
+	margin: 0
+	padding: 0
+	list-style-type: none
+	.active
+		> a
+				color: $menu-color
+				background: $menu-color-active
+	> li
+			display: block
+			position: relative
+			float: left
+			margin: 0
+			padding: 0
+			> a
+					display: block
+					line-height: 30px
+					font-size: 20px
+					padding: 1rem 3rem
+					color: #fff
+					&:hover
+						color: $menu-color
+						background: $menu-color-active
