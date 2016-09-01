@@ -2,7 +2,7 @@
 @import "base"
 @import "vars"
 @import "libs"
-
+@import "buttons"
 
 .page-header
 	background: #fff
@@ -12,7 +12,9 @@
 		padding: 15px 0
 
 	.contact-info
-		padding: 35px 0
+
+		.list-inline
+			margin: 50px 0
 
 		li
 			a
@@ -26,10 +28,10 @@
 
 
 
-
+/* SECTION HERO INTRO BANNER */
 .hero-img
 	width: 100%
-	height: 69vh
+	height: 75vh
 	min-height: 320px
 	position: relative
 	background:
@@ -38,15 +40,100 @@
 		size: cover
 		position: center center
 
+.intro-title
+	padding-top: 75px
+
+	h1
+		font:
+			family: 'PT Sans', sans-serif;
+			size: rem(48)
+			weight: bold
+		line-height: 48px
+		color: $title-color
+	span
+		font:
+			family: 'PT Sans', sans-serif;
+			size: rem(30)
+		line-height: 30px
+		color: #565656
+
+
+/* SECTION SEARCH */
+.search-section
+	border-top: 25px solid $main-color
+
+	.search-title
+		padding: 45px 0 50px
+
+		span
+			font:
+				family: 'PT Sans', sans-serif;
+				size: rem(18)
+			line-height: rem(18)
+			color: #565656
+
+
+/* DISTRICTS SECTION*/
+
+.districts-wrapper
+
+	.district-item
+		position: relative
+		margin: 10px auto
+		overflow: hidden
+		&:hover .districts-content
+			bottom: 0
+			background: rgba(40,112,194,0.65)
+		&:hover .districts-content h4
+			padding: 30% 0 0
+
+		.districts-content
+			+size(100%)
+			@include position(absolute, null null -220px null)
+			background: rgba(0,0,0,0.65)
+			text-align: center
+			h4
+				font-size: rem(18)
+				color: #fff
+				padding: 5px 0 0
+			span
+				color: #fff
+				font-size: rem(14)
+
+.view-all
+	margin-top: 35px
 
 
 
+/* CATEGORY SECTION */
+.category-wrapper
+	padding: 0 50px
+	.category-item
+		font-size: 0
+		line-height: 1
+		position: relative
+		margin-bottom: 20px
+		.category-icon
+			+size(85px)
+		span
+			display: block
+			padding-top: 15px
+			font-size: rem(18)
+			font-weight: bold
+			color: #5c5c5c
 
+/* ABOUT */
 
+.re-about-wrapper
+	padding: 0 50px
 
+	.about-text-wrapper
 
-
-
+		h4
+		p
+			text-align: left
+			font-size: rem(15)
+			color: #3a3a3a
 
 
 //ALWAYS END

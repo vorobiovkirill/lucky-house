@@ -6,26 +6,72 @@ html
 
 body
 	color: #3a3a3a
-	background-color: #d1d1d1
+	background: #d1d1d1
 	font-size: 16px
 	line-height: 1.5
 	padding: 0
 	margin: 0
-	font:
-		family: 'RobotoRegular', sans-serif
-		style: normal
-		weight: normal
-	min-width: 320px
-	overflow: hidden
+	font-family: 'PT Sans', sans-serif
 
 a
-	color: red
 	background-color: transparent;
 	text-decoration: none
 	line-height: inherit
 	cursor: pointer
 	&:hover
 		text-decoration: none
+
+h1, h2, h3, h4, h5, h6
+	font:
+		family: 'PT Sans', sans-serif
+		weight: normal
+		style: normal
+	line-height: rem(30)
+	color: $title-color
+
+h2
+	font-weight: bold
+	font-size: rem(32)
+
+h3
+	font-weight: bold
+	font-size: rem(26)
+
+h4
+	font-weight: bold
+	font-size: rem(21)
+	color: #3a3a3a
+
+img
+	width: 100%
+
+
+
+.mdshadow
+	box-shadow: $mdshadow
+
+.section-margin-top
+	margin-top: -250px
+	position: relative
+
+.section
+	position: relative
+	padding: 60px 0
+
+	.section-title
+		margin-bottom: 60px
+
+.section-white
+	background: #f6f9fe
+
+.section-grey
+	background: #EAECF3
+
+
+
+
+
+
 
 
 .list-inline
