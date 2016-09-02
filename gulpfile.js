@@ -72,10 +72,7 @@ gulp.task('removebuild', function() {
 // // =========================================
 gulp.task('build', ['removebuild', 'sass', 'libs'], function() {
 
-	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-		'src/css/style.css',
-		'src/css/libs.min.css'
-		])
+	var buildCss = gulp.src('src/css/**/*')
 	.pipe(gulp.dest('build/css'))
 
 	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен
@@ -86,6 +83,9 @@ gulp.task('build', ['removebuild', 'sass', 'libs'], function() {
 
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('build'));
+
+	var buildImage = gulp.src('src/img/**/*') // Переносим HTML в продакшен
+	.pipe(gulp.dest('build/img'));
 
 });
 // // =============================
