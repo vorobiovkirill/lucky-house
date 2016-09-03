@@ -27,6 +27,32 @@
 .main-navigation
 	background: $main-color
 
+	.menu
+	display: block
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+	.active
+		> a
+				color: $menu-color
+				background: $menu-color-active
+		> li
+				display: block
+				position: relative
+				float: left
+				margin: 0
+				padding: 0
+				> a
+						display: block
+						line-height: 30px
+						font-size: 20px
+						padding: 1rem 3rem
+						color: #fff
+						&:hover
+							color: $menu-color
+							background: $menu-color-active
+
 
 /* SECTION HERO INTRO BANNER START */
 
@@ -46,14 +72,14 @@
 
 	h1
 		font:
-			family: 'PT Sans', sans-serif;
+			family: $base-font-family
 			size: rem(48)
 			weight: bold
 		line-height: 48px
 		color: $title-color
 	span
 		font:
-			family: 'PT Sans', sans-serif;
+			family: $base-font-family
 			size: rem(30)
 		line-height: 30px
 		color: #565656
@@ -63,13 +89,13 @@
 
 .lh-search-wrapper
 	border-top: 25px solid $main-color
-	padding: 50px
+	padding: 0 35px
 	.search-title
 		padding: 45px 0 50px
 
 		span
 			font:
-				family: 'PT Sans', sans-serif;
+				family: $base-font-family
 				size: rem(18)
 			line-height: rem(18)
 			color: #565656
@@ -84,12 +110,13 @@
 /* DISTRICTS SECTION START */
 
 .lh-districts-wrapper
-	padding: 0 50px
+	padding: 0 35px
 
 	.district-item
 		position: relative
 		margin: 10px auto
 		overflow: hidden
+		transition: all 350ms ease-out
 
 		&:hover .districts-content
 			bottom: 0
@@ -100,9 +127,10 @@
 
 		.districts-content
 			+size(100%)
-			@include position(absolute, null null -85% null)
+			@include position(absolute, null null -85% 0)
 			background: rgba(0,0,0,0.65)
 			text-align: center
+			transition: all 350ms ease-out
 			h4
 				font-size: rem(18)
 				color: #fff
@@ -117,7 +145,7 @@
 /* CATEGORY SECTION START */
 
 .lh-category-wrapper
-	padding: 0 50px
+	padding: 0 35px
 
 	.category-item
 		font-size: 0
@@ -137,7 +165,7 @@
 /* SECTION ABOUT START */
 
 .lh-about-wrapper
-	padding: 0 50px
+	padding: 0 35px
 
 	.about-text-wrapper
 
@@ -236,7 +264,31 @@
 	.property-wrap
 
 		.properties-image
+			position: relative
+			overflow: hidden
 			padding: 0
+			img
+				max-width: 100%
+				display: block
+				position: relative
+			&:hover .properties-caption
+				bottom: -60%
+
+			.properties-caption
+				+size(100%)
+				@include position(absolute, null null -80% 0)
+				background: rgba($main-color, .7)
+				text-align: center
+				transition: all 350ms ease-out
+				color: #fff
+				opacity: 1
+
+				.properties-title
+					font-size: rem(18px)
+					line-height: rem(30)
+					padding: 10px 5px
+					span
+						font-weight: bold
 
 		.properties-content
 			display: table
@@ -266,6 +318,8 @@
 				line-height: rem(24)
 
 .properties-paginations
+	padding: 0 35px
+	margin-top: 15px
 	.pagination
 		.current
 			background: transparent

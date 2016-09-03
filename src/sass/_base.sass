@@ -5,13 +5,13 @@ html
 	font-size: 16px
 
 body
-	color: #5f5f5f
-	background: #d1d1d1
-	font-size: 16px
+	color: $text-color
+	background: $bacground-color
+	font-size: $base-font-size
 	line-height: 1.5
 	padding: 0
 	margin: 0
-	font-family: 'PT Sans', sans-serif
+	font-family: $base-font-family
 
 a
 	background-color: transparent;
@@ -26,11 +26,15 @@ ol, ul
 
 h1, h2, h3, h4, h5, h6
 	font:
-		family: 'PT Sans', sans-serif
+		family: $base-font-family
 		weight: normal
 		style: normal
 	line-height: rem(30)
 	color: $title-color
+
+h1
+	font-weight: bold
+	font-size: rem(48)
 
 h2
 	font-weight: bold
@@ -43,10 +47,20 @@ h3
 h4
 	font-weight: bold
 	font-size: rem(21)
-	color: #3a3a3a
+
+h5
+	font-weight: normal
+	font-size: rem(16)
+
+h6
+	font-weight: normal
+	font-size: rem(14)
+
 
 img
-	width: 100%
+	max-width: 100%
+	height: auto
+	vertical-align: middle
 
 
 
@@ -73,38 +87,16 @@ img
 .section-grey
 	background: #EAECF3
 
+label
+	color: $text-color
 
-
-
-
-
+select
+	border: 1px solid rgba(40,112,194,0.40)
+	color: $text-color
 
 
 .list-inline
 	> li
 		display: inline-block
 
-.menu
-	display: block
-	margin: 0
-	padding: 0
-	list-style-type: none
-	.active
-		> a
-				color: $menu-color
-				background: $menu-color-active
-	> li
-			display: block
-			position: relative
-			float: left
-			margin: 0
-			padding: 0
-			> a
-					display: block
-					line-height: 30px
-					font-size: 20px
-					padding: 1rem 3rem
-					color: #fff
-					&:hover
-						color: $menu-color
-						background: $menu-color-active
+
