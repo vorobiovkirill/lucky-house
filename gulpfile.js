@@ -75,16 +75,16 @@ gulp.task('build', ['removebuild', 'sass', 'libs'], function() {
 	var buildCss = gulp.src('src/css/**/*')
 	.pipe(gulp.dest('build/css'))
 
-	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в продакшен
+	var buildFonts = gulp.src('src/fonts/**/*') // Переносим шрифты в build
 	.pipe(gulp.dest('build/fonts'))
 
-	var buildJs = gulp.src('src/js/**/*') // Переносим скрипты в продакшен
+	var buildJs = gulp.src('src/js/**/*') // Переносим скрипты в build
 	.pipe(gulp.dest('build/js'))
 
-	var buildHtml = gulp.src('src/*.html') // Переносим HTML в продакшен
-	.pipe(gulp.dest('build'));
+	var buildHtml = gulp.src('src/*.html') // Переносим HTML в build
+	.pipe(gulp.dest('build'))
 
-	var buildImage = gulp.src('src/img/**/*') // Переносим HTML в продакшен
+	var buildImage = gulp.src('src/img/**/*') // Переносим Image в build
 	.pipe(gulp.dest('build/img'));
 
 });
