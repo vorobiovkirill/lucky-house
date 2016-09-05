@@ -1,0 +1,51 @@
+/* FOOTER START */
+.page-footer
+	background: $main-color
+	color: #fff
+	margin-bottom: 70px
+	a
+		color: #fff
+
+	.footer-top
+		padding: 30px 50px
+
+	.footer-bottom
+		background: darken($main-color, 10%)
+		padding: 5px 0
+
+		.copyright-text
+			text-align: center
+			color: #fff
+
+			a
+				transition: all .2s ease
+				font-size: 12px
+				font-weight: 300
+				position: relative
+				display: inline-block
+				text-decoration: none
+				letter-spacing: 4px
+				text-transform: uppercase
+				color: #bcccdb
+				outline: none
+				text-shadow: 0 0 1px rgba(255,255,255,.3)
+
+		.lantrix-footer-hover
+			a
+				padding: 5px 0
+				color: #ecf0f1
+				text-shadow: none
+				&:before
+					position: absolute
+					top: 0
+					left: 0
+					overflow: hidden
+					max-width: 0
+					padding: 5px 0
+					content: attr(data-hover)
+					transition: max-width .5s
+					color: #fff
+					border-bottom: 1px solid #fff
+
+				&:hover:before, &:focus:before
+					max-width: 100%

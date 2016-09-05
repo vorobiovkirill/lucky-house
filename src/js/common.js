@@ -1,6 +1,15 @@
 $(function() {
 
 
-$(document).foundation();
+	$(document).foundation();
+
+	$('.bxslider').bxSlider({
+		pagerCustom: '#thumbnials',
+		mode: 'fade',
+		infiniteLoop: false,
+		hideControlOnEnd: true,
+	});
+
+
 
 });

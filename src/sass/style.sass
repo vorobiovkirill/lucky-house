@@ -3,6 +3,7 @@
 @import "vars"
 @import "libs"
 @import "buttons"
+@import "layouts/footer"
 
 /* HEADER START */
 .page-header
@@ -16,6 +17,7 @@
 
 		.list-inline
 			margin: 50px 0
+			text-align: right
 
 		li
 			a
@@ -174,56 +176,7 @@
 			font-size: rem(15)
 			color: #3a3a3a
 
-/* FOOTER START */
-.page-footer
-	background: $main-color
-	color: #fff
-	a
-		color: #fff
 
-	.footer-top
-		padding: 30px 50px
-
-	.footer-bottom
-		background: darken($main-color, 10%)
-		padding: 5px 0
-
-		.copyright-text
-			text-align: center
-			color: #fff
-
-			a
-				transition: all .2s ease
-				font-size: 12px
-				font-weight: 300
-				position: relative
-				display: inline-block
-				text-decoration: none
-				letter-spacing: 4px
-				text-transform: uppercase
-				color: #bcccdb
-				outline: none
-				text-shadow: 0 0 1px rgba(255,255,255,.3)
-
-		.lantrix-footer-hover
-			a
-				padding: 5px 0
-				color: #ecf0f1
-				text-shadow: none
-				&:before
-					position: absolute
-					top: 0
-					left: 0
-					overflow: hidden
-					max-width: 0
-					padding: 5px 0
-					content: attr(data-hover)
-					transition: max-width .5s
-					color: #fff
-					border-bottom: 1px solid #fff
-
-				&:hover:before, &:focus:before
-					max-width: 100%
 
 
 
@@ -233,7 +186,7 @@
 /* SECTION PROPERTIES LISTS */
 
 .lh-breadcrumbs-wrapper
-	padding: 20px 35px
+	padding: 20px 35px 10px
 
 	.breadcrumbs
 		a
@@ -261,61 +214,61 @@
 	&:first-child
 		border-top: 10px solid $main-color
 
-	.property-wrap
+.property-wrap
 
-		.properties-image
+	.properties-image
+		position: relative
+		overflow: hidden
+		padding: 0
+		img
+			max-width: 100%
+			display: block
 			position: relative
-			overflow: hidden
-			padding: 0
-			img
-				max-width: 100%
-				display: block
-				position: relative
-			&:hover .properties-caption
-				bottom: -60%
+		&:hover .properties-caption
+			bottom: -60%
 
-			.properties-caption
-				+size(100%)
-				@include position(absolute, null null -80% 0)
-				background: rgba($main-color, .7)
-				text-align: center
-				transition: all 350ms ease-out
-				color: #fff
-				opacity: 1
+		.properties-caption
+			+size(100%)
+			@include position(absolute, null null -80% 0)
+			background: rgba($main-color, .7)
+			text-align: center
+			transition: all 350ms ease-out
+			color: #fff
+			opacity: 1
 
-				.properties-title
-					font-size: rem(18px)
-					line-height: rem(30)
-					padding: 10px 5px
-					span
-						font-weight: bold
-
-		.properties-content
-			display: table
-
-			.properties-content__header
-				display: table-row
-				vertical-align: middle
-				color: $main-color
-				font-size: rem(16)
-				line-height: rem(24)
-
-				.properties-address
-					padding: 15px 0 20px
-
-				.properties-price
+			.properties-title
+				font-size: rem(18px)
+				line-height: rem(30)
+				padding: 10px 5px
+				span
 					font-weight: bold
-					margin-bottom: 10px;
 
-			.properties-content__details
-				display: table-row
-				vertical-align: middle
+	.properties-content
+		display: table
 
-			.properties-content__descr
-				display: table-row
-				vertical-align: middle
-				font-size: rem(14)
-				line-height: rem(24)
+		.properties-content__header
+			display: table-row
+			vertical-align: middle
+			color: $main-color
+			font-size: rem(16)
+			line-height: rem(24)
+
+			.properties-address
+				padding: 15px 0 20px
+
+			.properties-price
+				font-weight: bold
+				margin-bottom: 10px;
+
+		.properties-content__details
+			display: table-row
+			vertical-align: middle
+
+		.properties-content__descr
+			display: table-row
+			vertical-align: middle
+			font-size: rem(14)
+			line-height: rem(24)
 
 .properties-paginations
 	padding: 0 35px
@@ -332,6 +285,204 @@
 				color: #fff
 		.disabled
 			cursor: default
+
+
+/*** PAGE RENT ***/
+
+/* SIDEBAR PROPERTIES AGENT */
+.lh-rent-wrapper
+	padding: 0 35px
+
+.agent-unit-wrapper
+	width: 100%
+	position: relative
+	overflow: hidden
+	border-top: 10px solid $main-color
+	margin-bottom: 30px
+
+	.agent-unit-price
+		width: 100%
+		background:  #fff
+		text-align: center
+		padding: 10px 0 5px
+		.uah
+			display: block
+			font-size: rem(35)
+			color: $main-color
+			font-weight: bold
+		span
+			color: #8c8c8c
+			font-size: rem(24)
+			font-weight: normal
+		a
+			font-size: rem(10)
+			font-weight: bold
+			color: darken($main-color, 10%)
+
+	.agent-unit-image
+		width: 100%
+		overflow: hidden
+		text-align: center
+		padding: 20px 0
+		position: relative
+		background-image: url('../img/agents/agent-1-blur-bg.png')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		span
+			display: block
+			font-size: rem(24)
+			font-weight: bold
+			color: #f6f9fe
+
+	.agent-unit-contacts
+		width: 100%
+		background: #fff
+		text-align: center
+		padding: 30px 0
+		position: relative
+		a
+			color: $text-color
+		ul
+			&:before
+				content: ''
+				width: 40px
+				height: 40px
+				position: absolute
+				left: 20px
+				top: 35%
+				background-image: url(../img/icons/cell-phone-call-icon-call.png)
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: cenrer
+
+	.agent-unit-question
+		width: 100%
+		overflow: hidden
+		background: $main-color
+		text-align: center
+		padding: 20px 0
+		cursor: pointer
+		a
+			color: #fff
+			font-size: rem(21)
+		&:hover
+			background: $button-color
+
+.similar-properties-wrapper
+	@extend .agent-unit-wrapper
+	padding: 10px 0
+
+	.properties-items-title
+		h3
+			text-align: center
+			font-size: rem(24)
+			font-weight: normal
+			color: $title-color
+
+	.property-wrap
+		margin-bottom: 20px
+
+/* PROPERTIES ITEM */
+/* PROPERTIES ITEM TITLE */
+.properties-item
+	@extend .agent-unit-wrapper
+
+	.properties-item-wrapper
+		padding: 0 20px
+
+	.properties-item-title
+		padding: 35px 0 30px
+
+		.menu
+			li
+				a
+					color: $text-color
+					font-size: rem(11)
+					font-weight: bold
+
+	.properties-item-tags
+		margin-bottom: 20px
+		ul
+			li
+				display: inline-block
+				margin-right: 30px
+				span
+					font-weight: bold
+
+/* PROPERTIES ITEM SLIDER */
+.properties-slider-wrapper
+	margin-bottom: 20px
+
+	.properties-main-photo
+		margin-bottom: 20px
+
+		.bx-wrapper
+			box-shadow: none
+			margin: 0
+			border: 0
+			background: transparent
+			img
+				width: 100%
+
+	.properties-thumbnail-wrapper
+
+		.thumbnials-items-wrapper
+			li
+				float: left
+				width: 25%
+				padding: 0 1%
+
+/* PROPERTIES ITEM DETAILS */
+.properties-item-wrapper
+	.properties-map-wrapper
+		background: #fff
+		padding: 5px 5px 0
+
+.properties-details-wrapper
+	background: #fff
+	padding: 20px 35px
+	margin-bottom: 15px
+
+	.properties-details-list
+		margin-bottom: 40px
+		ul
+			li
+				p
+					font-size: rem(18)
+					font-weight: bold
+					color: #393939
+					span
+						font-weight: normal
+						float: right
+						margin-right: 85px
+
+	.properties-details-features
+		margin-bottom: 40px
+
+		.features-item
+			width: 15%
+			display: inline-block
+			text-align: center
+			margin-bottom: 10px
+			padding: 5px
+			span
+				font-size: rem(11)
+				color: $main-color
+
+	.properties-details-conditions
+		margin-bottom: 40px
+		h5
+			color: #212121
+			font-size: rem(18)
+			font-weight: bold
+		ul
+			list-style-type: inherit
+			margin-left: 1.5rem
+
+	.properties-details-descr
+		@extend .properties-details-conditions
+
 
 
 //ALWAYS END

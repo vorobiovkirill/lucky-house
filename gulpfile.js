@@ -45,6 +45,7 @@ gulp.task('libs', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/foundation-sites/dist/foundation.min.js',
+		'bower_components/bxslider-4-master/dist/jquery.bxslider.min.js',
 		'bower_components/what-input/what-input.js'
 		// сюда через заяпятую перечисляем все библиотеки
 		])

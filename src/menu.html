@@ -28,8 +28,10 @@
 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 
 				<div class="row">
 
-					<div class="small-2 large-2 columns text-center">
+					<div class="small-12 large-2 columns text-center">
 
 						<div class="logo">
 
@@ -55,7 +57,7 @@
 
 					</div>
 
-					<div class="small-12 large-10 columns text-right contact-info">
+					<div class="small-12 large-10 columns contact-info">
 
 						<ul class="list-inline">
 							<li><a href="" title="">(098) 765 43 21</a></li>
@@ -79,16 +81,7 @@
 
 				<div class="row">
 
-					<ul class="menu-centered dropdown menu" data-dropdown-menu>
 
-						<li class="active">
-							<a href="#">Меню 1</a>
-						</li>
-						<li><a href="#">Меню  2</a></li>
-						<li><a href="#">Меню  3</a></li>
-						<li><a href="#">Меню  4</a></li>
-
-					</ul>
 
 				</div>
 
@@ -279,11 +272,7 @@
 
 																	<div class="form-group price-field">
 
-																		<select id="price" name="price">
-																			<option value="от">от</option>
-																			<option value="1">1</option>
-																			<option value="2">2</option>
-																		</select>
+																		<input id="price" name="price" type="text" placeholder="от">
 
 																	</div>
 
@@ -293,11 +282,8 @@
 
 																	<div class="form-group price-field">
 
-																		<select id="price" name="price">
-																			<option value="до">до</option>
-																			<option value="1">1</option>
-																			<option value="2">2</option>
-																		</select>
+																		<input id="price" name="price" type="text" placeholder="до">
+
 
 																	</div>
 
@@ -749,58 +735,450 @@
 
 					<!-- ========================== SECTION RESULT START ========================== -->
 
-					<section id="lh-result" class="section-white lh-section-result">
+					<section id="lh-rent" class="section section-grey lh-section-rent">
 
-						<div class="row">
+						<div class="lh-rent-wrapper">
 
-							<!-- PROPERTY SEARCH TITLE START -->
+							<div class="row">
 
-							<div class="properties-search-title">
+								<div class="columns large-3">
 
-								<div class="columns small-12">
+									<div class="properties-sidebar">
 
-									<h2>Результаты поиска <span class="number-ads">(64 объявления)</span></h2>
+										<!-- PROPERTIES AGENT START -->
+
+										<div class="agent-unit-wrapper">
+
+											<div class="agent-unit-price">
+
+												<span class="uah">1200 грн <span>/ день</span></span>
+
+												<a href="" title=""><i></i>Отслеживать снижение цены</a>
+
+											</div>
+
+											<div class="agent-unit-image">
+
+												<div class="agent-unit-image-overlay">
+
+													<img src="img/agents/agent-1.png" alt="agent">
+
+													<span class="agent-unit-name">Татьяна</span>
+
+												</div>
+
+											</div>
+
+											<div class="agent-unit-contacts">
+
+												<ul>
+													<li><a href="#">+38 (098) 123 45 67</a></li>
+													<li><a href="#">+38 (098) 123 45 67</a></li>
+													<li><a href="#">+38 (098) 123 45 67</a></li>
+												</ul>
+
+											</div>
+
+											<div class="agent-unit-question">
+
+												<a href="#">Задать вопрос online</a>
+
+											</div>
+
+										</div>
+
+										<!-- SIMILAR PROPERTIES START -->
+
+										<div class="similar-properties-wrapper">
+
+											<div class="properties-items-title">
+
+												<h3>Похожие объявления</h3>
+
+											</div>
+
+											<div class="property-wrap">
+
+												<div class="properties-image">
+
+													<a href="#">
+
+														<img src="img/districts/district-img-5.jpg" alt="">
+
+														<div class="properties-caption">
+
+															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
+
+															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
+
+														</div>
+
+													</a>
+
+												</div>
+
+											</div>
+
+											<div class="property-wrap">
+
+												<div class="properties-image">
+
+													<a href="#">
+
+														<img src="img/districts/district-img-5.jpg" alt="">
+
+														<div class="properties-caption">
+
+															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
+
+															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
+
+														</div>
+
+													</a>
+
+												</div>
+
+											</div>
+
+											<div class="property-wrap">
+
+												<div class="properties-image">
+
+													<a href="#">
+
+														<img src="img/districts/district-img-5.jpg" alt="">
+
+														<div class="properties-caption">
+
+															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
+
+															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
+
+														</div>
+
+													</a>
+
+												</div>
+
+											</div>
+
+											<div class="property-wrap">
+
+												<div class="properties-image">
+
+													<a href="#">
+
+														<img src="img/districts/district-img-5.jpg" alt="">
+
+														<div class="properties-caption">
+
+															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
+
+															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
+
+														</div>
+
+													</a>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="columns large-9">
+
+									<div class="properties-item">
+
+										<div class="properties-item-wrapper">
+
+											<div class="row">
+
+												<div class="columns large-12">
+
+													<!-- PROPERTIES TITLE & TAGS START -->
+
+													<div class="properties-item-title">
+
+														<div class="row">
+
+															<div class="columns large-7">
+
+																<h2>Квартира в уютном районе</h2>
+
+															</div>
+
+															<div class="columns large-5">
+
+																<ul class="menu">
+																	<li><a href=""><i></i>Добавить в закладки</a></li>
+																	<li><a href=""><i></i>Версия для печати</a></li>
+																</ul>
+
+															</div>
+
+														</div>
+
+													</div>
+
+													<div class="properties-item-tags">
+
+														<ul>
+															<li><span>Недвижимость:</span> Квартира</li>
+															<li><span>Район:</span> Оболонский</li>
+															<li><span>Метро:</span> Минская</li>
+															<li><span>Комнат:</span> 3</li>
+														</ul>
+
+													</div>
+
+												</div>
+
+												<div class="columns large-12">
+
+													<!-- PROPERTIES SLIDER START -->
+
+													<div class="properties-slider-wrapper">
+
+														<div class="properties-main-photo">
+
+															<ul class="bxslider">
+																<li><img src="img/properties-photo/main-photo.png"></li>
+																<li><img src="img/properties-photo/main-photo.png"></li>
+																<li><img src="img/properties-photo/main-photo.png"></li>
+																<li><img src="img/properties-photo/main-photo.png"></li>
+															</ul>
+
+														</div>
+
+														<div class="properties-thumbnail-wrapper">
+
+															<ul id="thumbnials" class="thumbnials-items-wrapper clearfix">
+																<li><a data-slide-index="0" href=""><img src="img/properties-photo/main-photo.png" /></a></li>
+																<li><a data-slide-index="1" href=""><img src="img/properties-photo/main-photo.png" /></a></li>
+																<li><a data-slide-index="2" href=""><img src="img/properties-photo/main-photo.png" /></a></li>
+																<li><a data-slide-index="3" href=""><img src="img/properties-photo/main-photo.png" /></a></li>
+															</ul>
+
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="columns large-12">
+
+													<!-- PROPERTIES DETAILS START -->
+
+													<div class="properties-details-wrapper">
+
+														<div class="properties-details-list">
+
+															<div class="row">
+
+																<div class="columns large-6">
+
+																	<ul>
+																		<li><p>Операция: <span>аренда</span></p></li>
+																		<li><p>Недвижимость: <span>квартира</span></p></li>
+																		<li><p>Район: <span>Оболонский</span></p></li>
+																		<li><p>Метро: <span>Минская</span></p></li>
+																	</ul>
+
+																</div>
+
+																<div class="columns large-6">
+
+																	<ul>
+																		<li><p>Комнат: <span>3</span></p></li>
+																		<li><p>Кроватей: <span>3</span></p></li>
+																		<li><p>Гостей: <span>5</span></p></li>
+																		<li><p>Ванных комнат: <span>2</span></p></li>
+																	</ul>
+
+																</div>
+
+															</div>
+
+														</div>
+
+														<div class="properties-details-conditions">
+
+															<h5>Условия сдачи:</h5>
+
+															<ul>
+																<li>Не проживать с животными</li>
+																<li>Не использовать под мероприятие</li>
+																<li>Время заезда / выезда оговаривается индивидуально</li>
+																<li>Расчетное время 12 часов независимо от времени заезда</li>
+																<li>Время заселения и выселения по договоренности</li>
+																<li>Курить только на балконе</li>
+															</ul>
+
+														</div>
+
+														<div class="properties-details-descr">
+
+															<h5>Описание:</h5>
+
+															<p>Посуточная аренда просторной 2комнатной квартиры на на ул.Артема, Шевченковский район, Центр, Лукьяновка, Львовская площадь. Рядом находятся: Дом одежды, Дом художника, учебный центр Министерства Юстиции, клиники, министерство налогов и сборов, магазины, бутики, супермаркеты, торгово-развлекательные центры, ночные клубы, кафе, рестораны. </p>
+
+														</div>
+
+													</div>
+
+												</div>
+
+												<div class="columns large-12">
+
+													<div class="properties-map-wrapper">
+
+														<div id="map">
+
+															<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.851535728478!2d30.517962316073746!3d50.44386597947436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI2JzM3LjkiTiAzMMKwMzEnMTIuNSJF!5e0!3m2!1sru!2sua!4v1472811511494" width="100%" height="275px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+														</div>
+
+													</div>
+
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
 
 								</div>
 
 							</div>
 
-							<!-- PROPERTY SEARCH TITLE END -->
-
 						</div>
 
-						<div class="row">
+						</section>
 
-							<!-- PROPERTY PAGINATION START -->
+						<!-- ========================== SECTION RESULT END ========================== -->
 
-							<div class="properties-paginations">
+						<!--========================== CATEGORY  START ========================== -->
+
+						<section id="lh_category" class="section section-light lh-category-section">
+
+							<div class="lh-category-wrapper">
 
 								<div class="row">
 
-									<div class="large-9 columns">
+									<div class="small-12 columns">
 
-										<ul class="pagination text-left" role="navigation" aria-label="Pagination">
-											<li class="pagination-previous disabled">Назад</li>
-											<li class="current">1</li>
-											<li><a href="#" aria-label="Page 2">2</a></li>
-											<li><a href="#" aria-label="Page 3">3</a></li>
-											<li><a href="#" aria-label="Page 4">4</a></li>
-											<li><a href="#" aria-label="Page 5">5</a></li>
-											<li class="pagination-next"><a href="#" aria-label="Next page">Вперед</a></li>
-										</ul>
+										<div class="section-title text-center">
+
+											<h2>Категории недвижимости</h2>
+
+										</div>
 
 									</div>
 
-									<div class="large-3 columns">
+								</div>
 
-										<ul class="vertical menu" data-accordion-menu>
-											<li>
-												<a href="#">От старых к новым</a>
-												<ul class="menu vertical nested">
-													<li><a href="#">от новых к старым</a></li>
-												</ul>
-											</li>
-										</ul>
+								<div class="row">
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/house.png" alt="">
+
+												<span>Дома</span>
+
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/apartments.png" alt="">
+
+												<span>Квартиры</span>
+
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/garage.png" alt="">
+
+												<span>Гаражи</span>
+
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/wheat.png" alt="">
+
+												<span>Участки</span>
+
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/livingroom.png" alt="">
+
+												<span>Комнаты</span>
+
+											</a>
+
+										</div>
+
+									</div>
+
+									<div class="small-12 medium-6 large-2 columns text-center">
+
+										<div class="category-item">
+
+											<a href="" title="">
+
+												<img class="category-icon" src="img/category icons/presentation.png" alt="">
+
+												<span>Коммерческая</span>
+
+											</a>
+
+										</div>
 
 									</div>
 
@@ -808,495 +1186,97 @@
 
 							</div>
 
-							<!-- PROPERTY PAGINATION END -->
+						</section>
+
+						<!-- ========================== CATEGORY END ========================== -->
+
+						<!-- ========================== FOOTER START ========================== -->
+
+						<footer class="page-footer">
+
+							<div class="footer-top">
+
+								<div class="row">
+
+									<div class="small-12 large-4 large-3 columns">
+
+										<div class="footer-logo">
+
+											<img src="img/logo/logo-w.png" alt="logo">
+
+										</div>
+
+									</div>
+
+									<div class="small-12 large-4 large-6 columns">
+
+
+									</div>
+
+									<div class="small-12 large-4 large-3 columns">
+
+										<div class="footer-contacts text-right">
+
+											<ul>
+												<li><a href="" title="">(098) 123 45 67</a></li>
+												<li><a href="" title="">(098) 123 45 67</a></li>
+												<li><a href="" title="">(098) 123 45 67</a></li>
+											</ul>
+
+											<ul>
+												<li><a href="" title="">yourname@gmail.com</a></li>
+												<li><a href="" title="">yourname@gmail.com</a></li>
+											</ul>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="footer-bottom">
+
+								<div class="small-12 large-6 large-6 large-centered">
+
+									<div class="copyright-text lantrix-footer-hover">
+
+										<span>© 2016 All right reserved. Designed and Developed by<br>
+											<a href="https://lantrix.com.ua/" data-hover="Lantrix" title="Создание сайта - студия Lantrix">
+												Lantrix
+											</a></span>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</footer>
+
+							<!-- ========================== FOOTER END ========================== -->
 
 						</div>
-
-						<div class="row">
-
-							<div id="sort-result" class="sort-result-wrapper">
-
-								<div class="large-7 columns properties-list properties-search-result-list">
-
-									<!-- PROPERTY START -->
-
-									<div class="property">
-
-										<div class="row column">
-
-											<div class="property-wrap">
-
-												<div class="large-6 columns properties-image">
-
-													<a href="#">
-
-														<img src="img/districts/district-img-5.jpg" alt="">
-
-														<div class="properties-caption">
-
-															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
-
-															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
-
-														</div>
-
-													</a>
-
-												</div>
-
-												<div class="large-6 columns properties-content">
-
-													<div class="properties-content__header">
-
-														<div class="properties-address">
-
-															<span>р-н: Оболонский, ул. Богатырская</span> <i></i>
-
-														</div>
-
-														<div class="properties-price">
-
-															<span>$43 000 / 1 134 650 грн</span>
-
-														</div>
-
-													</div>
-
-													<div class="properties-content__details">
-
-														<div>
-															<span>комнат: <span>3</span></span><span>этаж:<span>3/9</span></span>
-														</div>
-
-														<div>
-															<span>площадь: <span>54/28/10</span></span>
-														</div>
-
-													</div>
-
-													<div class="properties-content__descr">
-
-														Светлая просторная квартира в хорошем
-														районе. Рядом ТРЦ, до метро
-
-														<a href="read-more" title="">Подробнее</a>
-
-													</div>
-
-												</div>
-
-											</div>
-
-
-										</div>
-
-									</div>
-
-									<!-- PROPERTY END -->
-
-									<!-- PROPERTY START -->
-
-									<div class="property">
-
-										<div class="row column">
-
-											<div class="property-wrap">
-
-												<div class="large-6 columns properties-image">
-
-													<a href="#">
-
-														<img src="img/districts/district-img-5.jpg" alt="">
-
-														<div class="properties-caption">
-
-															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
-
-															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
-
-														</div>
-
-													</a>
-
-												</div>
-
-												<div class="large-6 columns properties-content">
-
-													<div class="properties-content__header">
-
-														<div class="properties-address">
-
-															<span>р-н: Оболонский, ул. Богатырская</span> <i></i>
-
-														</div>
-
-														<div class="properties-price">
-
-															<span>$43 000 / 1 134 650 грн</span>
-
-														</div>
-
-													</div>
-
-													<div class="properties-content__details">
-														<span>комнат: <b>3</b> этаж: <b>3/9</b></span>
-														<span>площадь: <b>54/28/10</b></span>
-													</div>
-
-													<div class="properties-content__descr">
-
-														Светлая просторная квартира в хорошем
-														районе. Рядом ТРЦ, до метро
-
-														<a href="read-more" title="">Подробнее</a>
-
-													</div>
-
-												</div>
-
-											</div>
-
-
-										</div>
-
-									</div>
-
-									<!-- PROPERTY END -->
-
-									<!-- PROPERTY START -->
-
-									<div class="property">
-
-										<div class="row column">
-
-											<div class="property-wrap">
-
-												<div class="large-6 columns properties-image">
-
-													<a href="#">
-
-														<img src="img/districts/district-img-5.jpg" alt="">
-
-														<div class="properties-caption">
-
-															<div class="properties-title">Уютная трешка на Оболони: <span class="pr-price">$43 000</span></div>
-
-															<span class="pr-phone">+38 (098) 123 45 67 (Татьяна)</span>
-
-														</div>
-
-													</a>
-
-												</div>
-
-												<div class="large-6 columns properties-content">
-
-													<div class="properties-content__header">
-
-														<div class="properties-address">
-
-															<span>р-н: Оболонский, ул. Богатырская</span> <i></i>
-
-														</div>
-
-														<div class="properties-price">
-
-															<span>$43 000 / 1 134 650 грн</span>
-
-														</div>
-
-													</div>
-
-													<div class="properties-content__details">
-														<span>комнат: <b>3</b> этаж: <b>3/9</b></span>
-														<span>площадь: <b>54/28/10</b></span>
-													</div>
-
-													<div class="properties-content__descr">
-
-														Светлая просторная квартира в хорошем
-														районе. Рядом ТРЦ, до метро
-
-														<a href="read-more" title="">Подробнее</a>
-
-													</div>
-
-												</div>
-
-											</div>
-
-										</div>
-
-									</div>
-
-									<!-- PROPERTY END -->
-
-									<!-- PROPERTY PAGINATION START -->
-
-									<div class="properties-paginations">
-
-										<div class="row">
-
-											<div class="large-12 columns">
-
-												<ul class="pagination text-center" role="navigation" aria-label="Pagination">
-													<li class="pagination-previous disabled">Назад <span class="show-for-sr">page</span></li>
-													<li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-													<li><a href="#" aria-label="Page 2">2</a></li>
-													<li><a href="#" aria-label="Page 3">3</a></li>
-													<li><a href="#" aria-label="Page 4">4</a></li>
-													<li><a href="#" aria-label="Page 5">5</a></li>
-													<li class="pagination-next"><a href="#" aria-label="Next page">Вперед <span class="show-for-sr">page</span></a></li>
-												</ul>
-
-											</div>
-
-										</div>
-
-
-									</div>
-
-									<!-- PROPERTY PAGINATION END -->
-
-								</div>
-
-								<div class="large-5 columns properties-map">
-
-									<div id="fixedmap">
-
-										<div id="map">
-
-											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.851535728478!2d30.517962316073746!3d50.44386597947436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI2JzM3LjkiTiAzMMKwMzEnMTIuNSJF!5e0!3m2!1sru!2sua!4v1472811511494" width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</section>
-
-					<!-- ========================== SECTION RESULT END ========================== -->
-
-					<!--========================== CATEGORY  START ========================== -->
-
-					<section id="lh_category" class="section section-light lh-category-section">
-
-						<div class="lh-category-wrapper">
-
-							<div class="row">
-
-								<div class="small-12 columns">
-
-									<div class="section-title text-center">
-
-										<h2>Категории недвижимости</h2>
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="row">
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/house.png" alt="">
-
-											<span>Дома</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/apartments.png" alt="">
-
-											<span>Квартиры</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/garage.png" alt="">
-
-											<span>Гаражи</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/wheat.png" alt="">
-
-											<span>Участки</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/livingroom.png" alt="">
-
-											<span>Комнаты</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-								<div class="small-12 medium-6 large-2 columns text-center">
-
-									<div class="category-item">
-
-										<a href="" title="">
-
-											<img class="category-icon" src="img/category icons/presentation.png" alt="">
-
-											<span>Коммерческая</span>
-
-										</a>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</section>
-
-					<!-- ========================== CATEGORY END ========================== -->
-
-					<!-- ========================== FOOTER START ========================== -->
-
-					<footer class="page-footer">
-
-						<div class="footer-top">
-
-							<div class="row">
-
-								<div class="small-12 large-4 large-3 columns">
-
-									<div class="footer-logo">
-
-										<img src="img/logo/logo-w.png" alt="logo">
-
-									</div>
-
-								</div>
-
-								<div class="small-12 large-4 large-6 columns">
-
-
-								</div>
-
-								<div class="small-12 large-4 large-3 columns">
-
-									<div class="footer-contacts text-right">
-
-										<ul>
-											<li><a href="" title="">(098) 123 45 67</a></li>
-											<li><a href="" title="">(098) 123 45 67</a></li>
-											<li><a href="" title="">(098) 123 45 67</a></li>
-										</ul>
-
-										<ul>
-											<li><a href="" title="">yourname@gmail.com</a></li>
-											<li><a href="" title="">yourname@gmail.com</a></li>
-										</ul>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="footer-bottom">
-
-							<div class="small-12 large-6 large-6 large-centered">
-
-								<div class="copyright-text lantrix-footer-hover">
-
-									<span>© 2016 All right reserved. Designed and Developed by<br>
-										<a href="https://lantrix.com.ua/" data-hover="Lantrix" title="Создание сайта - студия Lantrix">
-											Lantrix
-										</a></span>
-
-									</div>
-
-								</div>
-
-							</div>
-
-						</footer>
-
-						<!-- ========================== FOOTER END ========================== -->
 
 					</div>
 
-				</div>
+				</main>
 
-			</main>
-
-
-
-		</div>
+			</div>
 
 
 
+			<!-- Optimized loading JS Start -->
+			<script>var scr = {"scripts":[
+				{"src" : "js/libs.min.js", "async" : false},
+				{"src" : "js/common.js", "async" : false}
+				]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+			</script>
+
+			<!-- Optimized loading JS End -->
 
 
 
-		<!-- Optimized loading JS Start -->
-		<script>var scr = {"scripts":[
-			{"src" : "js/libs.min.js", "async" : false},
-			{"src" : "js/common.js", "async" : false}
-			]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
-		</script>
-		<!-- Optimized loading JS End -->
-
-	</body>
-	</html>
+		</body>
+		</html>
