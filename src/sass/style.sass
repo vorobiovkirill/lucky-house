@@ -4,15 +4,46 @@
 @import "libs"
 @import "buttons"
 @import "layouts/footer"
-@import "layouts/menu"
+
+.dn
+	display: none
+
+.disabled
+	color: grey
+
+.mdshadow
+	box-shadow: $mdshadow
+
+.section-margin-top
+	margin-top: -250px
+	position: relative
+
+.section
+	position: relative
+	padding: 60px 0
+
+	.section-title
+		margin-bottom: 60px
+
+.section-light
+	background: #fff
+
+.section-grey
+	background: #eceff1
+
+.list-inline
+	> li
+		display: inline-block
+
+
 
 /* HEADER START */
 .page-header
 	background: #fff
 
 	.logo
-		margin: 0 0 10px
-		padding: 15px 0
+		margin: 0
+		padding: 30px 0
 
 	.contact-info
 
@@ -30,31 +61,31 @@
 .main-navigation
 	background: $main-color
 
-	.menu
-	display: block
-	margin: 0
-	padding: 0
-	list-style-type: none
+	.lh-navigation
+		display: block
+		margin: 0
+		padding: 0
+		list-style-type: none
 
-	.active
-		> a
-				color: $menu-color
-				background: $menu-color-active
-		> li
-				display: block
-				position: relative
-				float: left
-				margin: 0
-				padding: 0
-				> a
-						display: block
-						line-height: 30px
-						font-size: 20px
-						padding: 1rem 3rem
-						color: #fff
-						&:hover
-							color: $menu-color
-							background: $menu-color-active
+		.active
+			> a
+					color: $menu-color
+					background: $menu-color-active
+			> li
+					display: block
+					position: relative
+					float: left
+					margin: 0
+					padding: 0
+					> a
+							display: block
+							line-height: 30px
+							font-size: 20px
+							padding: 1rem 3rem
+							color: #fff
+							&:hover
+								color: $menu-color
+								background: $menu-color-active
 
 
 /* SECTION HERO INTRO BANNER START */
@@ -72,7 +103,6 @@
 
 .intro-title
 	padding-top: 75px
-
 	h1
 		font:
 			family: $base-font-family
@@ -183,16 +213,12 @@
 			color: #3a3a3a
 
 
-
-
-
-
 /*** PAGE RESULT ***/
 
 /* SECTION PROPERTIES LISTS */
 
 .lh-breadcrumbs-wrapper
-	padding: 20px 35px 10px
+	padding: 30px 35px 0
 
 	.breadcrumbs
 		a
@@ -292,38 +318,55 @@
 		.disabled
 			cursor: default
 
-
 /*** PAGE RENT ***/
 
+.page-rent, .page-sale
+	margin-top: 50px
+
+	.lh-breadcrumbs-section
+		border-top: 20px solid $main-color
+
+.lh-section-rent, .lh-section-sale
+	padding-top: 10px
+
 /* SIDEBAR PROPERTIES AGENT */
-.lh-rent-wrapper
+.lh-rent-wrapper, .lh-sale-wrapper
 	padding: 0 35px
 
 .agent-unit-wrapper
 	width: 100%
 	position: relative
 	overflow: hidden
-	border-top: 10px solid $main-color
-	margin-bottom: 30px
+	margin-bottom: 15px
 
 	.agent-unit-price
 		width: 100%
-		background:  #fff
+		background: #fff
 		text-align: center
-		padding: 10px 0 5px
+		padding: 15px 0 15px
+
 		.uah
 			display: block
-			font-size: rem(35)
-			color: $main-color
+			font-size: rem(32)
+			color: $title-color
 			font-weight: bold
+
+		.usd
+			display: block
+			font-size: rem(24)
+			line-height: rem(35)
+			color: $text-color
+			font-weight: bold
+
 		span
-			color: #8c8c8c
+			color: $text-color
 			font-size: rem(24)
 			font-weight: normal
+
 		a
 			font-size: rem(10)
 			font-weight: bold
-			color: darken($main-color, 10%)
+			color: $text-color
 
 	.agent-unit-image
 		width: 100%
@@ -352,15 +395,18 @@
 		ul
 			&:before
 				content: ''
-				width: 40px
-				height: 40px
+				+size(35px)
 				position: absolute
-				left: 20px
-				top: 35%
-				background-image: url(../img/icons/cell-phone-call-icon-call.png)
+				left: 15px
+				top: 40%
+				background-image: url('../img/icons/cell-phone-call-icon-call-red.png')
 				background-repeat: no-repeat
 				background-size: contain
-				background-position: cenrer
+				background-position: center
+			li
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
 
 	.agent-unit-question
 		width: 100%
@@ -376,10 +422,10 @@
 			background: $button-color
 
 .similar-properties-wrapper
-	@extend .agent-unit-wrapper
 	padding: 10px 0
 
 	.properties-items-title
+		margin-bottom: 20px
 		h3
 			text-align: center
 			font-size: rem(24)
@@ -390,15 +436,25 @@
 		margin-bottom: 20px
 
 /* PROPERTIES ITEM */
-/* PROPERTIES ITEM TITLE */
+
 .properties-item
-	@extend .agent-unit-wrapper
 
 	.properties-item-wrapper
 		padding: 0 20px
 
+	.properties-item-header
+		padding: 15px
+		background: #fff
+
+	/* PROPERTIES ITEM TITLE */
+
 	.properties-item-title
-		padding: 35px 0 30px
+		padding: 10px 0
+
+		a
+			color: $text-color
+			font-size: rem(12)
+			font-weight: bold
 
 		.menu
 			li
@@ -407,8 +463,13 @@
 					font-size: rem(11)
 					font-weight: bold
 
-	.properties-item-tags
+	.properties-item-data
+		font-size: rem(12)
+		color: $text-color
 		margin-bottom: 20px
+
+	.properties-item-tags
+		margin-bottom: 10px
 		ul
 			li
 				display: inline-block
@@ -418,7 +479,6 @@
 
 /* PROPERTIES ITEM SLIDER */
 .properties-slider-wrapper
-	margin-bottom: 20px
 
 	.properties-main-photo
 		margin-bottom: 20px
@@ -448,7 +508,7 @@
 .properties-details-wrapper
 	background: #fff
 	padding: 20px 35px
-	margin-bottom: 15px
+	margin: 15px 0 15px
 
 	.properties-details-list
 		margin-bottom: 40px
@@ -485,9 +545,6 @@
 		ul
 			list-style-type: inherit
 			margin-left: 1.5rem
-
-	.properties-details-descr
-		@extend .properties-details-conditions
 
 
 
