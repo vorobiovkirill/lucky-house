@@ -4,6 +4,7 @@
 @import "libs"
 @import "buttons"
 @import "layouts/footer"
+@import "layouts/header"
 
 .dn
 	display: none
@@ -35,57 +36,6 @@
 	> li
 		display: inline-block
 
-
-
-/* HEADER START */
-.page-header
-	background: #fff
-
-	.logo
-		margin: 0
-		padding: 30px 0
-
-	.contact-info
-
-		.list-inline
-			margin: 50px 0
-			text-align: right
-
-		li
-			a
-				color: #000
-				font-size: rem(16)
-				line-height: 18px
-				margin-left: 35px
-
-.main-navigation
-	background: $main-color
-
-	.lh-navigation
-		display: block
-		margin: 0
-		padding: 0
-		list-style-type: none
-
-		.active
-			> a
-					color: $menu-color
-					background: $menu-color-active
-			> li
-					display: block
-					position: relative
-					float: left
-					margin: 0
-					padding: 0
-					> a
-							display: block
-							line-height: 30px
-							font-size: 20px
-							padding: 1rem 3rem
-							color: #fff
-							&:hover
-								color: $menu-color
-								background: $menu-color-active
 
 
 /* SECTION HERO INTRO BANNER START */
@@ -145,6 +95,22 @@
 		color: #fff
 		background: $button-color
 
+.price-field
+	.button
+		background: #FEFEFE
+		color: $text-color
+		border: 1px solid rgb(220, 220, 220)
+		margin: 0
+		outline: none
+	.dropdown-menu
+		border: 1px solid #dcdcdc
+		padding: 5px
+	.field-separator
+		color: red
+
+.parameters
+	padding-top: 10px
+
 /* DISTRICTS SECTION START */
 
 .lh-districts-wrapper
@@ -191,8 +157,6 @@
 		position: relative
 		margin-bottom: 20px
 
-		.category-icon
-			+size(85px)
 		span
 			display: block
 			padding-top: 15px
@@ -241,7 +205,7 @@
 	padding-bottom: 50px
 
 .property
-	background: #eaecf3
+	background: #fff
 	margin-bottom: 20px
 	&:first-child
 		border-top: 10px solid $main-color
