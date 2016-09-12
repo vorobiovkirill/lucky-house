@@ -1,23 +1,33 @@
 /* HEADER START */
 .page-header
 	background: #fff
+	width: 100%
+	z-index: 100
+	transition: all 0.4s ease
+
+	.top-panel
+		padding: 10px 0
 
 	.logo
 		margin: 0
-		padding: 30px 0
 
 	.contact-info
-
-		.list-inline
-			margin: 50px 0
-			text-align: right
-
+		padding: 30px 0	0
+		text-align: right
 		li
 			a
 				color: #000
 				font-size: rem(16)
 				line-height: 18px
 				margin-left: 35px
+
+.sticky
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	transition: all 0.4s ease
 
 .main-navigation
 	background: $main-color
@@ -31,7 +41,7 @@
 			a
 				color: $menu-color
 				padding: 15px 35px
-				font-size: rem(20)
+				font-size: rem(16)
 				line-height: rem(30px)
 				&:hover
 					color: $menu-color

@@ -37,54 +37,58 @@
 	<div class="page">
 
 		<!-- PAGE HEADER -->
-		<header id="header" class="page-header">
+		<header id="header" class="page-header" role="banner">
 
 			<div class="container">
 
-				<div class="row">
+				<div class="top-panel">
 
-					<div class="small-2 large-2 columns text-center">
+					<div class="row">
 
-						<div class="logo">
+						<div class="small-2 large-2 columns text-center">
 
-							<a href="/" title="">
-								<img class="img-responsive" src="img/logo/logo-3.jpg" alt="Lucky Market Logo" title="Your Store">
-							</a>
+							<div class="logo">
+
+								<a href="/" title="">
+									<img class="img-responsive" src="img/logo/logo.png" alt="Lucky Market Logo" title="Your Store">
+								</a>
+
+							</div>
+
+						</div>
+
+						<div class="small-12 large-10 columns contact-info">
+
+							<ul class="list-inline">
+								<li><a href="" title="">(098) 765 43 21</a></li>
+								<li><a href="" title="">(098) 765 43 21</a></li>
+								<li><a href="" title="">(098) 765 43 21</a></li>
+								<li><a href="" title="">yourname@gmail.com</a></li>
+							</ul>
 
 						</div>
 
 					</div>
 
-					<div class="small-12 large-10 columns text-right contact-info">
+				</div>
 
-						<ul class="list-inline">
-							<li><a href="" title="">(098) 765 43 21</a></li>
-							<li><a href="" title="">(098) 765 43 21</a></li>
-							<li><a href="" title="">(098) 765 43 21</a></li>
-							<li><a href="" title="">yourname@gmail.com</a></li>
+				<div class="main-navigation">
+
+					<div class="row">
+
+						<ul class="menu-centered dropdown menu lh-navigation">
+
+							<li class="active">
+								<a href="#">Продажа</a>
+							</li>
+							<li><a href="#">Аренда</a></li>
+							<li><a href="#">Посуточно</a></li>
+							<li><a href="#">Новостройки</a></li>
+							<li><a href="#">За рубежом</a></li>
+
 						</ul>
 
 					</div>
-
-				</div>
-
-			</div>
-
-			<div class="main-navigation">
-
-				<div class="row">
-
-					<ul class="menu-centered dropdown menu lh-navigation">
-
-						<li class="active">
-							<a href="#">Продажа</a>
-						</li>
-						<li><a href="#">Аренда</a></li>
-						<li><a href="#">Посуточно</a></li>
-						<li><a href="#">Новостройки</a></li>
-						<li><a href="#">За рубежом</a></li>
-
-					</ul>
 
 				</div>
 
@@ -115,7 +119,7 @@
 
 		<main class="page-content">
 
-			<div class="row small-12 medium-8 large-9 columns">
+			<div class="row small-12 medium-8 large-9">
 
 				<div class="mdshadow">
 
@@ -174,8 +178,7 @@
 
 																<label for="type-of-properties">
 																	<select id="type-of-properties" name="type-of-properties">
-																		<option value="Тип недвижимости">Тип недвижимости</option>
-																		<option value="Тип недвижимости">Тип недвижимости</option>
+																		<option value="Квартира">Квартира</option>
 																	</select>
 																</label>
 
@@ -190,7 +193,6 @@
 																<label for="city">
 																	<select id="city" name="city">
 																		<option value="Выберите город">Выберите город</option>
-																		<option value="Выберите город">Выберите город</option>
 																	</select>
 																</label>
 
@@ -203,8 +205,8 @@
 															<div class="form-group districts-field">
 
 																<label>
-																	<select>
-																		<option value="Район (Только для Киева)">Район (Только для Киева)</option>
+																	<select id="rajons" name="rajons">
+																		<option value="">Район</option>
 																	</select>
 																</label>
 
@@ -235,9 +237,17 @@
 																	<div class="form-group rooms-field">
 
 																		<select id="rooms" name="rooms">
-																			<option value="от">от</option>
+																			<option value="">от</option>
 																			<option value="1">1</option>
 																			<option value="2">2</option>
+																			<option value="3">3</option>
+																			<option value="4">4</option>
+																			<option value="5">5</option>
+																			<option value="6">6</option>
+																			<option value="7">7</option>
+																			<option value="8">8</option>
+																			<option value="9">9</option>
+																			<option value="10">10</option>
 																		</select>
 
 																	</div>
@@ -248,10 +258,18 @@
 
 																	<div class="form-group rooms-field">
 
-																		<select id="rooms" name="rooms">
-																			<option value="до">до</option>
+																		<select id="rooms2" name="rooms">
+																			<option value="">до</option>
 																			<option value="1">1</option>
 																			<option value="2">2</option>
+																			<option value="3">3</option>
+																			<option value="4">4</option>
+																			<option value="5">5</option>
+																			<option value="6">6</option>
+																			<option value="7">7</option>
+																			<option value="8">8</option>
+																			<option value="9">9</option>
+																			<option value="10">10</option>
 																		</select>
 
 																	</div>
@@ -266,40 +284,56 @@
 
 															<div class="row">
 
-																<div class="large-4 columns">
+																<div class="large-9 columns">
 
 																	<div class="form-group price-field">
 
-																		<label for="price" class="text-right middle">Цена:</label>
+																		<div class="input-group">
+
+																			<div class="button expanded price_btn">Цена</div>
+
+																			<div class="dropdown-menu dn">
+
+																				<div class="form-group">
+
+																					<div class="row">
+
+																						<div class="large-6 columns">
+
+																							<input type="text" name="" value="" placeholder="от">
+
+																						</div>
+
+																						<div class="large-6 columns">
+
+																							<input type="text" name="" value="" placeholder="до">
+
+																						</div>
+
+																					</div>
+
+																				</div>
+
+																				<ul class="list-unstyled options">
+																					<li data-value="4000">4 000</li>
+																					<li data-value="4000">4 000</li>
+																					<li data-value="4000">4 000</li>
+																					<li data-value="4000">4 000</li>
+																					<li data-value="4000">4 000</li>
+																				</ul>
+
+																			</div>
+
+																		</div>
 
 																	</div>
 
 																</div>
 
-																<div class="large-4 columns">
+																<div class="large-3 columns">
 
-																	<div class="form-group price-field">
-
-																		<select id="price" name="price">
-																			<option value="от">от</option>
-																			<option value="1">1</option>
-																			<option value="2">2</option>
-																		</select>
-
-																	</div>
-
-																</div>
-
-																<div class="large-4 columns">
-
-																	<div class="form-group price-field">
-
-																		<select id="price" name="price">
-																			<option value="до">до</option>
-																			<option value="1">1</option>
-																			<option value="2">2</option>
-																		</select>
-
+																	<div class="input-group-button">
+																		<button type="submit" class="expanded button" value="грн.">грн.</button>
 																	</div>
 
 																</div>
@@ -308,20 +342,7 @@
 
 														</div>
 
-														<div class="large-2 columns">
-
-															<div class="form-group currency-field">
-
-																<select id="currency" name="currency">
-																	<option value="грн">грн.</option>
-																	<option value="$">$</option>
-																</select>
-
-															</div>
-
-														</div>
-
-														<div class="large-2 columns">
+														<div class="large-4 columns">
 
 															<div class="form-group photo-field">
 
@@ -899,13 +920,11 @@
 
 
 
-
-
-
 		<!-- Optimized loading JS Start -->
 		<script>var scr = {"scripts":[
 			{"src" : "js/libs.min.js", "async" : false},
-			{"src" : "js/common.js", "async" : false}
+			{"src" : "js/common.js", "async" : false},
+			{"src" : "js/index.js", "async" : false}
 			]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 		</script>
 		<!-- Optimized loading JS End -->

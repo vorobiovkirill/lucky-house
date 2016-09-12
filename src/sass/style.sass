@@ -21,10 +21,10 @@
 
 .section
 	position: relative
-	padding: 60px 0
+	padding: 60px 0 30px
 
 	.section-title
-		margin-bottom: 60px
+		margin-bottom: 30px
 
 .section-light
 	background: #fff
@@ -79,8 +79,8 @@
 		span
 			font:
 				family: $base-font-family
-				size: rem(18)
-			line-height: rem(18)
+				size: rem(16)
+			line-height: rem(16)
 			color: #565656
 
 .search-house
@@ -97,13 +97,13 @@
 
 .price-field
 	.button
-		background: #FEFEFE
+		background: #fff
 		color: $text-color
-		border: 1px solid rgb(220, 220, 220)
+		border: 1px solid rgba(40,112,194,0.25)
 		margin: 0
 		outline: none
 	.dropdown-menu
-		border: 1px solid #dcdcdc
+		border: 1px solid rgba(40,112,194,0.25)
 		padding: 5px
 	.field-separator
 		color: red
@@ -156,6 +156,12 @@
 		line-height: 1
 		position: relative
 		margin-bottom: 20px
+		img
+			transform: translateY(0)
+			transition: transform 0.3s
+		&:hover img
+			transform: translateY(-10px)
+			transition: transform 0.3s
 
 		span
 			display: block
@@ -170,10 +176,16 @@
 	padding: 0 35px
 
 	.about-text-wrapper
-
+		position: relative
+		h4
+			font-size: rem(21)
+			line-height: rem(21px)
+			color: #3a3a3a
+			margin-bottom: 20px
 		p
 			text-align: left
 			font-size: rem(15)
+			line-height: rem(16px)
 			color: #3a3a3a
 
 
@@ -240,31 +252,32 @@
 					font-weight: bold
 
 	.properties-content
-		display: table
 
 		.properties-content__header
-			display: table-row
-			vertical-align: middle
 			color: $main-color
 			font-size: rem(16)
 			line-height: rem(24)
 
 			.properties-address
 				padding: 15px 0 20px
+				font-weight: bold
 
 			.properties-price
 				font-weight: bold
 				margin-bottom: 10px;
 
 		.properties-content__details
-			display: table-row
-			vertical-align: middle
+			span
+				display: inline-block
+				margin-right: 15px
+				font-size: rem(14)
+				color: #5f5f5f
 
 		.properties-content__descr
-			display: table-row
-			vertical-align: middle
 			font-size: rem(14)
 			line-height: rem(24)
+			color: #5f5f5f
+			padding: 20px 0 10px
 
 .properties-paginations
 	padding: 0 35px
