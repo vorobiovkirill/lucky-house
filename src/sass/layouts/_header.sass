@@ -33,20 +33,51 @@
 	background: $main-color
 
 	.lh-navigation
-		display: block
 		margin: 0
 		padding: 0
+		outline: none
+		border: 0
+		background: none
 		list-style-type: none
+		*
+			@extend .lh-navigation
 		li
+			position: relative
+			display: inline-block
+			float: left
+			border-right: 1px solid rgba(255,255,255,0.15)
+			text-align: left
+			font-size: rem(16)
+			line-height: rem(30px)
+			white-space: nowrap
 			a
-				color: $menu-color
+				display: block
 				padding: 15px 35px
-				font-size: rem(16)
-				line-height: rem(30px)
+				text-decoration: none
+				color: $menu-color
+				transition: background 0.4s, color 0.4s
 				&:hover
 					color: $menu-color
 					background: $menu-color-active
-
+			> div
+				position: absolute
+				z-index: 1000
+				top: 100%
+				left: -9999px
+				background: $main-color
+				box-shadow: 0 0 8px rgba(0,0,0,.3)
+				opacity: 0
+				transform: scale(0,0)
+			&:hover > div
+				left: 0
+				opacity: 1
+				width: 250px
+				transform: scale(1,1)
+			li
+				display: block
+				float: none
+				white-space: normal
+				border-top: 1px solid rgba(255,255,255,0.15)
 		.active
 			> a
 					color: $menu-color
