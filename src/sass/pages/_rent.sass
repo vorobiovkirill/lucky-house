@@ -1,0 +1,123 @@
+@import 'bourbon'
+@import 'helpers/vars'
+
+
+
+/* SIDEBAR PROPERTIES AGENT */
+.lh-rent-wrapper, .lh-sale-wrapper
+	padding: 0 35px
+
+
+
+/* PROPERTIES ITEM */
+
+.properties-item
+
+	.properties-item-wrapper
+		padding: 0 20px
+
+	.properties-item-header
+		padding: 15px
+		background: #fff
+
+	/* PROPERTIES ITEM TITLE */
+
+	.properties-item-title
+		padding: 10px 0
+
+		a
+			color: $text-color
+			font-size: rem(12)
+			font-weight: bold
+
+		.menu
+			li
+				a
+					color: $text-color
+					font-size: rem(11)
+					font-weight: bold
+
+	.properties-item-data
+		font-size: rem(12)
+		color: $text-color
+		margin-bottom: 20px
+
+	.properties-item-tags
+		margin-bottom: 10px
+		ul
+			li
+				display: inline-block
+				margin-right: 30px
+				span
+					font-weight: bold
+
+/* PROPERTIES ITEM SLIDER */
+.properties-slider-wrapper
+
+	.properties-main-photo
+		margin-bottom: 20px
+
+		.bx-wrapper
+			box-shadow: none
+			margin: 0
+			border: 0
+			background: transparent
+			img
+				width: 100%
+
+	.properties-thumbnail-wrapper
+
+		.thumbnials-items-wrapper
+			li
+				float: left
+				width: 25%
+				padding: 0 1%
+				&:hover
+					filter: brightness(60%)
+
+/* PROPERTIES ITEM DETAILS */
+.properties-item-wrapper
+	.properties-map-wrapper
+		background: #fff
+		padding: 5px 5px 0
+
+.properties-details-wrapper
+	background: #fff
+	padding: 20px 35px
+	margin: 15px 0 15px
+
+	.properties-details-list
+		margin-bottom: 40px
+		ul
+			li
+				p
+					font-size: rem(18)
+					font-weight: bold
+					color: #393939
+					span
+						font-weight: normal
+						float: right
+						margin-right: 85px
+
+	.properties-details-features
+		margin-bottom: 40px
+
+		.features-item
+			width: 15%
+			display: inline-block
+			text-align: center
+			margin-bottom: 10px
+			padding: 5px
+			span
+				font-size: rem(11)
+				color: $main-color
+
+	.properties-details-conditions
+		margin-bottom: 40px
+		h5
+			color: #212121
+			font-size: rem(18)
+			font-weight: bold
+		ul
+			list-style-type: inherit
+			margin-left: 1.5rem

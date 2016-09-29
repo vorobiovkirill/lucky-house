@@ -1,0 +1,25 @@
+@import 'bourbon'
+@import 'helpers/vars'
+
+/* CATEGORY SECTION START */
+.lh-category-wrapper
+	padding: 0 35px
+
+	.category-item
+		font-size: 0
+		line-height: 1
+		position: relative
+		margin-bottom: 20px
+		img
+			transform: translateY(0)
+			transition: transform 0.3s
+		&:hover img
+			transform: translateY(-10px)
+			transition: transform 0.3s
+
+		span
+			display: block
+			padding-top: 15px
+			font-size: rem(18)
+			font-weight: bold
+			color: #5c5c5c

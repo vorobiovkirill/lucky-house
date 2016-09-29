@@ -24,6 +24,9 @@ gulp.task('browser-sync', function() {
 		server: { // Определяем параметры сервера
 			baseDir: 'src' // Директория для сервера - src
 		},
+		logPrefix: "Lucky House",
+		port: 1989,
+		startPath: 'index.html',
 		notify: false // Отключаем уведомления
 	});
 
@@ -64,7 +67,8 @@ gulp.task('scripts', function() {
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/foundation-sites/dist/foundation.min.js',
 		'bower_components/bxslider-4-master/dist/jquery.bxslider.min.js',
-		'bower_components/what-input/what-input.js'
+		'bower_components/what-input/what-input.js',
+		'src/libs/mmenu/dist/js/jquery.mmenu.all.min.js'
 		// сюда через заяпятую перечисляем все библиотеки
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
@@ -108,8 +112,11 @@ gulp.task('build', ['removebuild', 'styles', 'scripts'], function() {
 	var buildHtml = gulp.src('src/*.html') // Переносим HTML в build
 	.pipe(gulp.dest('build'))
 
-	var buildImage = gulp.src('src/img/**/*') // Переносим Image в build
-	.pipe(gulp.dest('build/img'));
+	var buildImg = gulp.src('src/img/**/*') // Переносим Image в build
+	.pipe(gulp.dest('build/img'))
+
+	var buildImages = gulp.src('src/images/**/*') // Переносим Image в build
+	.pipe(gulp.dest('build/images'));
 
 });
 
