@@ -12,8 +12,8 @@ const gulp         = require('gulp'), // Подключаем Gulp
 			cache        = require('gulp-cache'), // Подключаем библиотеку кеширования
 			autoprefixer = require('gulp-autoprefixer'), // Подключаем библиотеку для автоматического добавления префиксов
 			csscomb 		 = require('gulp-csscomb'), // Подключаем библиотеку для сортировки css свойств
-			notify = require("gulp-notify"), // Подключаем обработчик ошибок Notify
-			plumber = require('gulp-plumber'); // Подключаем Plumber
+			notify       = require("gulp-notify"), // Подключаем обработчик ошибок Notify
+			plumber      = require('gulp-plumber'); // Подключаем Plumber
 
 // // ==========================================================
 // Создаем задачу для browserSync (Обновление без перезагрузки)
